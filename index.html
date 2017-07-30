@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GIPHY MOVIE FINDER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Monoton|Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- title -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1><span id="red">GIPHY</span><span id="white"> MOVIE FINDER</span> </h1>
+            </div>
+        </div>
+
+
+        <!--search -->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 form-group searchDiv">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="movieSearch" placeholder="Search for movie">
+                    <span class="input-group-btn">
+		      <button class="btn btn-default" id="movieSearchBTN" type="submit"><span class="glyphicon glyphicon-search" aria-label="search"></span></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="row buttoHolderRow">
+            <div class="col-md-12 text-center">
+                <div id="buttonHolder"></div>
+            </div>
+        </div>
+        <!-- gif display -->
+        <div class="row">
+            <div class="col-md-12 picDiv text-center" id="gifDiv">
+                <p class="warning">Type in box or click button to begin</p>
+            </div>
+        </div>
+
+
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/javascript/logic.js"></script>
+</body>
+
+</html>
