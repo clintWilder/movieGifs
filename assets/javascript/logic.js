@@ -28,7 +28,7 @@ function createBTN() {
 
 //on search: push new movies to array, create new button and clear value
 $('#movieSearchBTN').on('click', function() {
-    if ($('#movieSearch').val() != "") {
+    if ($('#movieSearch').val() !== "") {
         var movieTXT = $('#movieSearch').val().trim();
         var newMovie = movieTXT.toLowerCase();
         movies.push(newMovie);
@@ -43,7 +43,7 @@ $('#movieSearchBTN').on('click', function() {
 $('#buttonHolder').on('click', '.movie', function() {
     $('#gifDiv').empty();
     var movieData = $(this).data('name');
-    var movieURL = "http://api.giphy.com/v1/gifs/search?q=" + movieData + "+movie&api_key=0e77cd7d94724b139456899f6c860ae4&limit=10";
+    var movieURL = "https://api.giphy.com/v1/gifs/search?q=" + movieData + "+movie&api_key=0e77cd7d94724b139456899f6c860ae4&limit=10";
 
 
     $.ajax({ url: movieURL, method: 'GET' }).done(function(response) {
